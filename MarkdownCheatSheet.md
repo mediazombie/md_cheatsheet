@@ -3,8 +3,23 @@ Markdown ist eine einfache Möglichkeit, Text mit Klartextsymbolen zu schreiben 
 
 Dieses Cheat Sheet wird einige der Schlüsselkomponenten des Markdowns durchgehen, einschließlich Code-Syntaxen und Beispiele, die der Leser verwenden kann, um einen eigenen hochformatierten Textartikel zu erstellen.
 
-## Inhalt:
+## Hinweise
+>Diese Übersicht in deutscher Sprache habe ich für mich selbst als kompaktes und möglichst übersichtliches Nachschlagwerk ausgearbeitet. Es kann sein, dass Dinge fehlen oder dass sich Fehler eingeschlichen haben. Wer also Fehler findet, darf sie behalten oder melden. Ebenso, wenn was auffällt, was man ebenfalls noch in diese Übersicht aufnehmen könnte.
 
+## Inhalt:
+- [[#Überschriften]]
+- [[#Text Formatierung]]
+- [[#Zitate]]
+- [[#Listen]]
+- [[#Horizontale Linien]]
+- [[#Kommentare]]
+- [[#Escape-Zeichen]]
+- [[#Syntax Hervorhebung (Code)]]
+- [[#Tabellen]]
+- [[#Links]]
+- [[#Bilder]]
+- [[#Fussnoten]]
+- [[#Anhang:]]
 
 ## Überschriften
 | Element | Markdown Syntax |
@@ -28,6 +43,132 @@ Markdown ermöglicht es uns, viele Stile, wie Fett, Kursiv, Blockquotes, Unterst
 | Durchgestrichen | \~~Text~~ |
 | Hochgestellt | \<sup>Text\</sup> |
 | Tiefgestellt | \<sub>Text\</sub> |
+
+## Zitate
+Auch Zitate oder auch Blockzitate genannt, sind in Markdown möglich.
+```md
+Das nachfolgende ist ein Zitat:
+> Ich bin ein Zitat!
+```
+**Ausgabe:**  
+Das nachfolgende ist ein Zitat:  
+> Ich bin ein Zitat!
+
+### Callouts (nur Obsidian bzw. weitere Editoren)
+```md
+> [!info] Here's a callout title
+> Here's a callout block.
+```
+Dabei generieren die folgenden, unterschiedlichen Symbol-Marker, unterschiedliche Callouts:
+```md
+> [!info] Hier ist der Titel.
+> [!tip] Hier ist der Titel.
+> [!faq]- Hier ist der Titel.
+> [!question]+ Hier ist der Titel.
+> [!todo] Hier ist der Titel.
+> [!example] Hier ist der Titel.
+```
+Ein `+` oder `-` nach der schliessenden eckigen Klammer `> [!faq]- ...` generiert ein Faltbares Callout!
+
+## Listen
+### Geordnete Listen
+Eine geordnete Liste definiert eine Liste von Elementen, bei der die Reihenfolge der Elemente von Bedeutung ist.
+```md
+1. Erstes Element
+2. Zweites Element
+3. Drittes Element
+```
+**Ausgabe:**
+1. Erstes Element
+2. Zweites Element
+3. Drittes Element
+### Geordnete Listen mit Unterlisten
+Eine geordnete Liste mit Unterlisten ist eine hierarchische Liste, in der jedes Element eine eigene Unterliste haben kann. Diese Struktur eignet sich gut, um Informationen strukturiert und hierarchisch zu organisieren.
+```md
+1. Item 1
+    1. Item 2
+        - Item 3
+2. Item 1
+    1. Item 2
+3. Item 1
+    1. Item 2
+```
+**Ausgabe:**
+1. Item 1
+    1. Item 2
+        - Item 3
+2. Item 1
+    1. Item 2
+3. Item 1
+    1. Item 2
+### Ungeordnete Listen
+Mit dem Sternchen (*), dem Pluszeichen (+) oder dem Minuszeichen (-) können wir ungeordnete Listen erstellen, wie unten gezeigt:
+```md
++ Item 1
++ Item 2
+* Item 1
+* Item 2
+- Item 1
+- Item 2
+```
+**Ausgabe:**
++ Item 1
++ Item 2
+* Item 1
+* Item 2
+- Item 1
+- Item 2
+### Ungeordnete verschachtelte Listen
+```md
+- Item 1
+    - Item 2
+        - Item 3
+- Item 1
+    - Item 2
+- Item 1
+    - Item 2
+```
+**Ausgabe:**
+- Item 1
+    - Item 2
+        - Item 3
+- Item 1
+    - Item 2
+- Item 1
+    - Item 2
+
+## Horizontale Linien
+Eine horizontale Linie dient dazu, Inhalte innerhalb eines Markdown-Dokuments zu trennen. Sie wird erstellt, indem drei oder mehr Bindestriche, Sternchen oder Unterstriche jeweils in einer eigenen Zeile platziert werden.
+```md
+---
+***
+___
+```
+**Ausgabe:**  
+
+---
+***
+___
+
+## Kommentare
+In Markdown kann man Kommentare mithilfe von HTML-Kommentaren erstellen. HTML-Kommentare werden in die Tags ``<!-- und -->`` eingeschlossen.
+
+## Escape-Zeichen
+In Markdown kann man Escape-Zeichen verwenden, um Zeichen mit besonderer Bedeutung in der Markdown-Syntax darzustellen. Um ein Escape-Zeichen zu verwenden, stellt man dem Zeichen einfach einen Backslash (\\) voran. Nachdem man das Zeichen mit dem Backslash-Symbol maskiert hat, werden die entsprechenden Zeichen hinter dem Backslash ausgegeben.
+```md
+\*   Stern
+\\   Backslash
+\`   Backtick
+\{}  geschweifte Klammern
+\.   Punkt
+\!   Ausrufezeichen
+\#   Hash-Symbol
+\-   Bindestrichsymbol
+\()  Klammern
+\+   Plus-Symbol
+\[]  Eckige Klammern
+\_   Unterstrich
+```
 
 ## Syntax Hervorhebung (Code)
 Mit der Syntax-Hervorhebung in Markdown kann man Code-Snippets für eine bessere Lesbarkeit formatieren und hervorheben. Es ist besonders nützlich, wenn Code in technischen Dokumentationen oder Online-Foren geteilt wird.
@@ -81,16 +222,16 @@ Um "normale" Inline-Links zu erstellen, den Link-Text in eckige Klammern einschl
 ```
 Meine bevorzugte Suchmaschine ist [Duck Duck Go](https://duckduckgo.com)
 ```
-Dies führt zu folgender Ausgabe:
-[Duck Duck Go](https://duckduckgo.com)
+**Dies führt zu folgender Ausgabe:**  
+Meine bevorzugte Suchmaschine ist [Duck Duck Go](https://duckduckgo.com)
 
-#### Beschreibung (Tooltipp) hinzufügen
-Optional kann auch eine Beschreibung zum Link hinzugefügt werden. Diese erscheint dann beim hoovern über den Link als eine art Tooltipp. Um eine Beschreibung zu einem Link hinzuzufügen, den gewünschten Text in Anführungszeichen am Ende der URL anfügen.
+#### Beschreibung (Tooltip) hinzufügen
+Optional kann auch eine Beschreibung zum Link hinzugefügt werden. Diese erscheint dann beim hoovern über den Link als eine art Tooltip. Um eine Beschreibung zu einem Link hinzuzufügen, den gewünschten Text in Anführungszeichen am Ende der URL anfügen.
 ```md
 Meine bevorzugte Suchmaschine ist [Duck Duck Go](https://duckduckgo.com "Meine bevorzugte Suchmaschine!")
 ```
-Dies führt dann zu folgender Ausgabe:  
-[Duck Duck Go](https://duckduckgo.com "Meine bevorzugte Suchmaschine!")
+**Dies führt dann zu folgender Ausgabe:**  
+Meine bevorzugte Suchmaschine ist [Duck Duck Go](https://duckduckgo.com "Meine bevorzugte Suchmaschine!")
 
 ### URLs und Email-Adressen
 Meistens werden URLs automatisch als solche erkannt (je nach Editor oder verwendetem Tool). Möchte man diese explizit und rasch als solche Kennzeichnen können auch spitze Kalmmern verwendet werden.
@@ -112,7 +253,15 @@ Das sieht dann so aus:
 Ich mag **[EFF](https://eff.org)**.  
 Das ist die Suchmaschine "Duck Duck Go": *[Duck Duck Go](https://duckduckgo.com)*
 
-### Fussnoten
+## Bilder
+Um Bilder einzufügen, vorab eine Ausrufezeichen (!), gefolgt vom beschreibenden Text in eckigen Klammern, dann den Pfad zum Bild in runden Klammern. Optional kann in Anführungszeichen hinter der URL noch ein Titel (Tooltip) eingegeben werden.
+```
+![The San Juan Mountains are beautiful](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
+```
+**Dies sieht dann so aus:**  
+![Mount Rainir, Washington, USA](https://unsplash.com/de/fotos/berggipfel-zeichnen-sich-als-silhouetten-vor-einem-dammrigen-himmel-ab-K-WrTI5-pfY "Mount Rainir, Washington, USA")
+
+## Fussnoten
 Es können auch Fussnoten verwendet werden. Dies geschieht mit folgendem Syntax:
 ```
 Das ist eine einfache Fussnote[^1].
@@ -122,3 +271,20 @@ Das ist eine einfache Fussnote[^1].
   kann man Fussnoten über mehrere Zeilen schreiben.
 [^notiz]: Benannte Fussnoten erscheinen zwar weiterhin als Nummern im Text, können es aber einfacher machen, Referenzen zu identifizieren und zu verlinken.
 ```
+
+## Anhang:
+### Obsidian spezifische Markdowns
+| Syntax | Beschreibung |
+| :--- | :--- |
+| ``[[Link]]`` | [Interne Links](https://obsidian.md/help/links) |
+| `![[Link]]` | [Eingebettete Dateien](https://obsidian.md/help/embeds) |
+| `![[Link#^id]]` | [Blockreferenz](https://obsidian.md/help/links#Link%20to%20a%20block%20in%20a%20note) |
+| `^id` | [Block definieren](https://obsidian.md/help/links#Link%20to%20a%20block%20in%20a%20note) |
+| `[^id]` | [Fussnote](https://obsidian.md/help/syntax#Footnotes) |
+| `%%Text%%` | [Kommentare](https://obsidian.md/help/syntax#Comments) |
+| `~~Text~~` | [Durchgestrichen](https://obsidian.md/help/syntax#Bold,%20italics,%20highlights) |
+| `==Text==` | [Hervorheben](https://obsidian.md/help/syntax#Bold,%20italics,%20highlights) |
+| ` ``` ` | [Codeblock](https://obsidian.md/help/syntax#Code%20blocks) |
+| `- []` | [Nicht abgeschlossene Aufgabe](https://obsidian.md/help/syntax#Task%20lists) |
+| `- [x]` | [Abgeschlossene Aufgabe](https://obsidian.md/help/syntax#Task%20lists) |
+| `> [!note]` | [Callouts](https://obsidian.md/help/callouts) |
