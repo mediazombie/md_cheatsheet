@@ -19,7 +19,7 @@ Dieses Cheat Sheet wird einige der Schlüsselkomponenten des Markdowns durchgehe
 - [Links](#Links)
 - [Bilder](#Bilder)
 - [Fussnoten](#Fussnoten)
-- [#Anhang:](#Anhang)
+- [Anhang:](#Anhang)
 
 ## Überschriften
 | Element | Markdown Syntax |
