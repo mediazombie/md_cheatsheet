@@ -8,18 +8,18 @@ Dieses Cheat Sheet wird einige der Schlüsselkomponenten des Markdowns durchgehe
 
 ## Inhalt:
 - [Überschriften](#Überschriften)
-- [Text Formatierung](#Text Formatierung)
+- [Text Formatierung](#Text-Formatierung)
 - [Zitate](#Zitate)
 - [Listen](#Listen)
-- [[#Horizontale Linien]]
-- [[#Kommentare]]
-- [[#Escape-Zeichen]]
-- [[#Syntax Hervorhebung (Code)]]
-- [[#Tabellen]]
-- [[#Links]]
-- [[#Bilder]]
-- [[#Fussnoten]]
-- [[#Anhang:]]
+- [Horizontale Linien](#Horizontale-Linien)
+- [Kommentare](#Kommentare)
+- [Escape-Zeichen](#Escape-Zeichen)
+- [Syntax Hervorhebung (Code)](#Syntax-Hervorhebung-Code)
+- [Tabellen](#Tabellen)
+- [Links](#Links)
+- [Bilder](#Bilder)
+- [Fussnoten](#Fussnoten)
+- [#Anhang:](#Anhang)
 
 ## Überschriften
 | Element | Markdown Syntax |
