@@ -9,4 +9,4 @@ Kleines und kompaktes Cheat Sheet (in deutscher Sprache), als Kurzanleitung zur 
 
 Dies ist nichts besonderes, sondern einfach nur ein kompaktes Cheat Sheet, welches für persönliche Zwecke entstanden ist. Einiges darin bezieht sich spezifisch auf die Formatierung in [Obsidian](https://obsidian.md/).
 
-Hier geht's zum Cheat Sheet: [[MarkdownCheatSheet]]
+Hier geht's zum Cheat Sheet: [Markdown Cheat Sheet](MarkdownCheatSheet.md)
