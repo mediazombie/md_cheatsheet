@@ -7,10 +7,10 @@ Dieses Cheat Sheet wird einige der Schlüsselkomponenten des Markdowns durchgehe
 >Diese Übersicht in deutscher Sprache habe ich für mich selbst als kompaktes und möglichst übersichtliches Nachschlagwerk ausgearbeitet. Es kann sein, dass Dinge fehlen oder dass sich Fehler eingeschlichen haben. Wer also Fehler findet, darf sie behalten oder melden. Ebenso, wenn was auffällt, was man ebenfalls noch in diese Übersicht aufnehmen könnte.
 
 ## Inhalt:
-- [[#Überschriften]]
-- [[#Text Formatierung]]
-- [[#Zitate]]
-- [[#Listen]]
+- [Überschriften](#Überschriften)
+- [Text Formatierung](#Text Formatierung)
+- [Zitate](#Zitate)
+- [Listen](#Listen)
 - [[#Horizontale Linien]]
 - [[#Kommentare]]
 - [[#Escape-Zeichen]]

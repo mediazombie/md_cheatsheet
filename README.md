@@ -1,8 +1,8 @@
 # Kurzanleitung zu Markdown
-Release: v1.0.0
-Date: 05.05.2026
-Edited: -
-Author: Ivo Büchel
+Release: v1.0.0  
+Date: 05.05.2026  
+Edited: -  
+Author: Ivo Büchel  
 
 ## Beschreibung
 Kleines und kompaktes Cheat Sheet (in deutscher Sprache), als Kurzanleitung zur Markdown-Syntax, um jederzeit die Grundlegenden Formatierungen in `md` (Markdown) rasch nachzuschauen.
