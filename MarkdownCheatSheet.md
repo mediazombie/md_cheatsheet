@@ -256,10 +256,10 @@ Das ist die Suchmaschine "Duck Duck Go": *[Duck Duck Go](https://duckduckgo.com)
 ## Bilder
 Um Bilder einzufügen, vorab eine Ausrufezeichen (!), gefolgt vom beschreibenden Text in eckigen Klammern, dann den Pfad zum Bild in runden Klammern. Optional kann in Anführungszeichen hinter der URL noch ein Titel (Tooltip) eingegeben werden.
 ```
-![The San Juan Mountains are beautiful](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
+![Foto von Su San Lee auf Unsplash](pics/su-san-lee-E_eWwM29wfU-unsplash.jpg "Photo by Su San Lee, Unsplash - Kiyozumi Dera, Kyoto, Japan")
 ```
 **Dies sieht dann so aus:**  
-![Mount Rainir, Washington, USA](https://unsplash.com/de/fotos/berggipfel-zeichnen-sich-als-silhouetten-vor-einem-dammrigen-himmel-ab-K-WrTI5-pfY "Mount Rainir, Washington, USA")
+![Foto von Su San Lee auf Unsplash](pics/su-san-lee-E_eWwM29wfU-unsplash.jpg "Photo by Su San Lee, Unsplash - Kiyozumi Dera, Kyoto, Japan")
 
 ## Fussnoten
 Es können auch Fussnoten verwendet werden. Dies geschieht mit folgendem Syntax:
