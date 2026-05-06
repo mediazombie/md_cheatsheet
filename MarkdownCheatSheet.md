@@ -260,6 +260,8 @@ Um Bilder einzufügen, vorab eine Ausrufezeichen (!), gefolgt vom beschreibenden
 ```
 **Dies sieht dann so aus:**  
 ![Foto von Su San Lee auf Unsplash](pics/su-san-lee-E_eWwM29wfU-unsplash.jpg "Photo by Su San Lee, Unsplash - Kiyozumi Dera, Kyoto, Japan")
+*Quelle Foto:* Foto von <a href="https://unsplash.com/de/@blackodc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Su San Lee</a> auf <a href="https://unsplash.com/de/fotos/pagode-umgeben-von-baumen-E_eWwM29wfU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
 
 ## Fussnoten
 Es können auch Fussnoten verwendet werden. Dies geschieht mit folgendem Syntax:
